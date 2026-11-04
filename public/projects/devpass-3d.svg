@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pass-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040614"/>
+      <stop offset="50%" stop-color="#0b1029"/>
+      <stop offset="100%" stop-color="#03040e"/>
+    </linearGradient>
+    <linearGradient id="card-foil" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="35%" stop-color="#818cf8"/>
+      <stop offset="70%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="strap-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#pass-bg)"/>
+
+  <!-- 3D Grid Perspective Plane in Background -->
+  <g opacity="0.25">
+    <line x1="100" y1="460" x2="350" y2="180" stroke="#38bdf8" stroke-width="1"/>
+    <line x1="250" y1="460" x2="380" y2="180" stroke="#38bdf8" stroke-width="1"/>
+    <line x1="400" y1="460" x2="400" y2="180" stroke="#38bdf8" stroke-width="1"/>
+    <line x1="550" y1="460" x2="420" y2="180" stroke="#38bdf8" stroke-width="1"/>
+    <line x1="700" y1="460" x2="450" y2="180" stroke="#38bdf8" stroke-width="1"/>
+    
+    <line x1="200" y1="360" x2="600" y2="360" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="260" y1="300" x2="540" y2="300" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="320" y1="240" x2="480" y2="240" stroke="#38bdf8" stroke-width="0.8"/>
+  </g>
+
+  <!-- Chrome Header -->
+  <rect x="0" y="0" width="800" height="42" fill="#060919" fill-opacity="0.95"/>
+  <line x1="0" y1="42" x2="800" y2="42" stroke="#1b254b" stroke-width="1"/>
+  
+  <circle cx="28" cy="21" r="5" fill="#ef4444" fill-opacity="0.85"/>
+  <circle cx="44" cy="21" r="5" fill="#f59e0b" fill-opacity="0.85"/>
+  <circle cx="60" cy="21" r="5" fill="#10b981" fill-opacity="0.85"/>
+
+  <rect x="250" y="10" width="300" height="22" rx="6" fill="#0d1433" stroke="#223061" stroke-width="0.8"/>
+  <text x="400" y="25" text-anchor="middle" font-family="monospace" font-size="11" fill="#7dd3fc">threejs-lab.dev / 3d-devpass</text>
+
+  <!-- Status Pill -->
+  <g transform="translate(670, 12)">
+    <rect width="105" height="19" rx="9" fill="#0369a1" fill-opacity="0.4" stroke="#38bdf8" stroke-width="0.8"/>
+    <circle cx="12" cy="9.5" r="3.5" fill="#38bdf8"/>
+    <text x="24" y="13" font-family="monospace" font-size="9" font-weight="700" fill="#7dd3fc">60 FPS WEBGL</text>
+  </g>
+
+  <!-- Left Stats & Controls HUD -->
+  <g transform="translate(45, 80)">
+    <rect width="210" height="85" rx="10" fill="#0a1029" stroke="#1f2c5c" stroke-width="1"/>
+    <text x="16" y="24" font-family="monospace" font-size="10" fill="#94a3b8">SIMULATION PHYSICS</text>
+    <text x="16" y="52" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#f8fafc">Verlet 60Hz</text>
+    <text x="16" y="68" font-family="monospace" font-size="9" fill="#34d399">Realtime Tension &amp; Gravity</text>
+
+    <g transform="translate(0, 105)">
+      <rect width="210" height="85" rx="10" fill="#0a1029" stroke="#1f2c5c" stroke-width="1"/>
+      <text x="16" y="24" font-family="monospace" font-size="10" fill="#94a3b8">SHADER MATERIALS</text>
+      <text x="16" y="52" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#c084fc">Iridescent Foil</text>
+      <text x="16" y="68" font-family="monospace" font-size="9" fill="#38bdf8">Dynamic Normal Mapping</text>
+    </g>
+
+    <g transform="translate(0, 210)">
+      <rect width="210" height="145" rx="10" fill="#0a1029" stroke="#1f2c5c" stroke-width="1"/>
+      <text x="16" y="24" font-family="monospace" font-size="10" fill="#94a3b8">INTERACTIVE EVENTS</text>
+      <text x="16" y="48" font-family="monospace" font-size="11" fill="#38bdf8">✓ Drag &amp; Toss Physics</text>
+      <text x="16" y="70" font-family="monospace" font-size="11" fill="#38bdf8">✓ Cursor Wind Breeze</text>
+      <text x="16" y="92" font-family="monospace" font-size="11" fill="#38bdf8">✓ Double Sided Texture</text>
+      <text x="16" y="122" font-family="monospace" font-size="10" fill="#64748b">Tech: Three.js • React Three Fiber</text>
+    </g>
+  </g>
+
+  <!-- Center Floating 3D Lanyard Card Representation -->
+  <g transform="translate(490, 40)">
+    <!-- Lanyard Strap from top -->
+    <path d="M 0 0 C 10 70, -20 120, -5 160" fill="none" stroke="url(#strap-grad)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 0 0 C 10 70, -20 120, -5 160" fill="none" stroke="#7dd3fc" stroke-width="2" stroke-dasharray="4 6"/>
+
+    <!-- Metallic Clip -->
+    <g transform="translate(-5, 160)">
+      <rect x="-14" y="0" width="28" height="22" rx="4" fill="#94a3b8" stroke="#cbd5e1" stroke-width="1.5"/>
+      <circle cx="0" cy="11" r="5" fill="#334155"/>
+      <rect x="-8" y="20" width="16" height="14" rx="2" fill="#64748b"/>
+    </g>
+
+    <!-- 3D Card Body (Tilted 3D Look) -->
+    <g transform="translate(-110, 185) rotate(-3)">
+      <!-- Drop Shadow -->
+      <rect x="15" y="15" width="230" height="250" rx="16" fill="#000000" fill-opacity="0.6"/>
+
+      <!-- Outer Card Surface -->
+      <rect width="230" height="250" rx="16" fill="#080d22" stroke="#38bdf8" stroke-width="1.5"/>
+      
+      <!-- Lanyard Hole -->
+      <rect x="95" y="10" width="40" height="6" rx="3" fill="#000000" stroke="#334155" stroke-width="1"/>
+
+      <!-- Holographic Foil Banner -->
+      <rect x="15" y="28" width="200" height="70" rx="10" fill="url(#card-foil)" fill-opacity="0.85"/>
+      <text x="25" y="52" font-family="system-ui, sans-serif" font-size="16" font-weight="900" fill="#0f172a" letter-spacing="1">DEVPASS 3D</text>
+      <text x="25" y="70" font-family="monospace" font-size="10" font-weight="700" fill="#1e1b4b">FULL STACK DEVELOPER</text>
+      <text x="25" y="86" font-family="monospace" font-size="9" fill="#312e81">ALVARO RAKA PRATAMA</text>
+
+      <!-- Avatar & Chip -->
+      <rect x="15" y="112" width="60" height="60" rx="10" fill="#0f1a3d" stroke="#38bdf8" stroke-width="1"/>
+      <circle cx="45" cy="136" r="16" fill="#38bdf8" fill-opacity="0.5"/>
+      <circle cx="45" cy="132" r="8" fill="#f8fafc"/>
+      <path d="M 33 154 C 33 146, 57 146, 57 154 Z" fill="#f8fafc"/>
+
+      <!-- Smart Microchip Gold -->
+      <g transform="translate(88, 120)">
+        <rect width="36" height="26" rx="4" fill="#ca8a04" stroke="#fef08a" stroke-width="0.8"/>
+        <line x1="18" y1="0" x2="18" y2="26" stroke="#854d0e"/>
+        <line x1="0" y1="13" x2="36" y2="13" stroke="#854d0e"/>
+      </g>
+
+      <!-- Barcode / QR at bottom -->
+      <g transform="translate(15, 186)">
+        <rect width="200" height="48" rx="6" fill="#030717" stroke="#1f293d" stroke-width="0.8"/>
+        <line x1="15" y1="10" x2="15" y2="38" stroke="#f8fafc" stroke-width="2"/>
+        <line x1="22" y1="10" x2="22" y2="38" stroke="#f8fafc" stroke-width="3"/>
+        <line x1="30" y1="10" x2="30" y2="38" stroke="#f8fafc" stroke-width="1"/>
+        <line x1="36" y1="10" x2="36" y2="38" stroke="#f8fafc" stroke-width="4"/>
+        <line x1="46" y1="10" x2="46" y2="38" stroke="#f8fafc" stroke-width="2"/>
+        <line x1="54" y1="10" x2="54" y2="38" stroke="#f8fafc" stroke-width="1"/>
+        <line x1="62" y1="10" x2="62" y2="38" stroke="#f8fafc" stroke-width="3"/>
+
+        <text x="80" y="24" font-family="monospace" font-size="9" fill="#94a3b8">AUTH ID: 8829-THX-3D</text>
+        <text x="80" y="38" font-family="monospace" font-size="8" fill="#38bdf8">PHYSICS ENGINE: ACTIVE</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Ambient Border Frame -->
+  <rect x="4" y="4" width="792" height="492" rx="14" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.35"/>
+</svg>
+

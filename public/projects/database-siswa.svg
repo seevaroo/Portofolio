@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="db-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020d1c"/>
+      <stop offset="50%" stop-color="#071933"/>
+      <stop offset="100%" stop-color="#020a14"/>
+    </linearGradient>
+    <linearGradient id="db-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#db-bg)"/>
+
+  <!-- Window Chrome Header -->
+  <rect x="0" y="0" width="800" height="42" fill="#041224" fill-opacity="0.95"/>
+  <line x1="0" y1="42" x2="800" y2="42" stroke="#162e4c" stroke-width="1"/>
+  
+  <circle cx="28" cy="21" r="5" fill="#ef4444" fill-opacity="0.85"/>
+  <circle cx="44" cy="21" r="5" fill="#f59e0b" fill-opacity="0.85"/>
+  <circle cx="60" cy="21" r="5" fill="#10b981" fill-opacity="0.85"/>
+
+  <rect x="250" y="10" width="300" height="22" rx="6" fill="#081a33" stroke="#1c3a61" stroke-width="0.8"/>
+  <text x="400" y="25" text-anchor="middle" font-family="monospace" font-size="11" fill="#93c5fd">siswadata.sch.id / portal-akademik</text>
+
+  <!-- Status Pill -->
+  <g transform="translate(670, 12)">
+    <rect width="105" height="19" rx="9" fill="#1e3a8a" fill-opacity="0.4" stroke="#3b82f6" stroke-width="0.8"/>
+    <circle cx="12" cy="9.5" r="3.5" fill="#3b82f6"/>
+    <text x="24" y="13" font-family="monospace" font-size="9" font-weight="700" fill="#93c5fd">PORTAL AKTIF</text>
+  </g>
+
+  <!-- Top 4 Summary Cards -->
+  <g transform="translate(35, 65)">
+    <!-- Card 1 -->
+    <rect width="170" height="75" rx="10" fill="#061833" stroke="#1b3c66" stroke-width="1"/>
+    <text x="14" y="22" font-family="monospace" font-size="10" fill="#94a3b8">TOTAL SISWA</text>
+    <text x="14" y="52" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#f8fafc">1,248</text>
+    <text x="14" y="66" font-family="monospace" font-size="9" fill="#34d399">● Terverifikasi Dapodik</text>
+
+    <!-- Card 2 -->
+    <g transform="translate(185, 0)">
+      <rect width="170" height="75" rx="10" fill="#061833" stroke="#1b3c66" stroke-width="1"/>
+      <text x="14" y="22" font-family="monospace" font-size="10" fill="#94a3b8">PRESENSI HARI INI</text>
+      <text x="14" y="52" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#38bdf8">100%</text>
+      <text x="14" y="66" font-family="monospace" font-size="9" fill="#38bdf8">Nir-Absensi (Lengkap)</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(370, 0)">
+      <rect width="170" height="75" rx="10" fill="#061833" stroke="#1b3c66" stroke-width="1"/>
+      <text x="14" y="22" font-family="monospace" font-size="10" fill="#94a3b8">RATA-RATA NILAI</text>
+      <text x="14" y="52" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#f8fafc">89.4</text>
+      <text x="14" y="66" font-family="monospace" font-size="9" fill="#34d399">▲ +3.2 vs Semester Lalu</text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(555, 0)">
+      <rect width="175" height="75" rx="10" fill="#061833" stroke="#1b3c66" stroke-width="1"/>
+      <text x="14" y="22" font-family="monospace" font-size="10" fill="#94a3b8">LEVEL AKSES</text>
+      <text x="14" y="52" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#38bdf8">Multi-Role</text>
+      <text x="14" y="66" font-family="monospace" font-size="9" fill="#64748b">Admin • Guru • Siswa</text>
+    </g>
+  </g>
+
+  <!-- Main Table Section -->
+  <g transform="translate(35, 160)">
+    <rect width="730" height="300" rx="12" fill="#06152b" stroke="#1b3c66" stroke-width="1"/>
+    
+    <!-- Table Header Bar -->
+    <rect width="730" height="40" rx="12" fill="#0c2344"/>
+    <text x="24" y="25" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#f8fafc">Data Siswa Aktif Terpusat</text>
+    <rect x="610" y="9" width="100" height="22" rx="6" fill="#2563eb"/>
+    <text x="660" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#ffffff">+ Tambah Data</text>
+
+    <!-- Table Columns -->
+    <g transform="translate(24, 60)">
+      <text font-family="monospace" font-size="10" fill="#64748b">NISN</text>
+      <text x="100" font-family="monospace" font-size="10" fill="#64748b">NAMA SISWA</text>
+      <text x="280" font-family="monospace" font-size="10" fill="#64748b">KELAS / JURUSAN</text>
+      <text x="460" font-family="monospace" font-size="10" fill="#64748b">STATUS</text>
+      <text x="590" font-family="monospace" font-size="10" fill="#64748b">AKSI</text>
+      <line x1="0" y1="12" x2="680" y2="12" stroke="#132b4a" stroke-width="1"/>
+    </g>
+
+    <!-- Row 1 -->
+    <g transform="translate(24, 95)">
+      <rect width="682" height="32" rx="6" fill="#0a1d38" fill-opacity="0.5"/>
+      <text x="10" y="20" font-family="monospace" font-size="11" fill="#93c5fd">008129381</text>
+      <text x="100" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f8fafc">Alvaro Raka Pratama</text>
+      <text x="280" y="20" font-family="monospace" font-size="11" fill="#cbd5e1">XII - Rekayasa Perangkat Lunak</text>
+      <rect x="460" y="7" width="60" height="18" rx="4" fill="#065f46" fill-opacity="0.6"/>
+      <text x="490" y="20" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#34d399">AKTIF</text>
+      <text x="590" y="20" font-family="monospace" font-size="11" fill="#38bdf8">Detail →</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(24, 137)">
+      <rect width="682" height="32" rx="6" fill="#0a1d38" fill-opacity="0.3"/>
+      <text x="10" y="20" font-family="monospace" font-size="11" fill="#93c5fd">008129382</text>
+      <text x="100" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f8fafc">Budi Santoso</text>
+      <text x="280" y="20" font-family="monospace" font-size="11" fill="#cbd5e1">XII - Rekayasa Perangkat Lunak</text>
+      <rect x="460" y="7" width="60" height="18" rx="4" fill="#065f46" fill-opacity="0.6"/>
+      <text x="490" y="20" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#34d399">AKTIF</text>
+      <text x="590" y="20" font-family="monospace" font-size="11" fill="#38bdf8">Detail →</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(24, 179)">
+      <rect width="682" height="32" rx="6" fill="#0a1d38" fill-opacity="0.3"/>
+      <text x="10" y="20" font-family="monospace" font-size="11" fill="#93c5fd">008129383</text>
+      <text x="100" y="20" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f8fafc">Citra Dewi Amanda</text>
+      <text x="280" y="20" font-family="monospace" font-size="11" fill="#cbd5e1">XII - Multimedia</text>
+      <rect x="460" y="7" width="60" height="18" rx="4" fill="#065f46" fill-opacity="0.6"/>
+      <text x="490" y="20" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#34d399">AKTIF</text>
+      <text x="590" y="20" font-family="monospace" font-size="11" fill="#38bdf8">Detail →</text>
+    </g>
+
+    <!-- Footer Stats inside table -->
+    <g transform="translate(24, 228)">
+      <line x1="0" y1="0" x2="682" y2="0" stroke="#132b4a" stroke-width="1"/>
+      <text y="24" font-family="monospace" font-size="10" fill="#64748b">Database Connection: MySQL 8.0 • Laravel 10.x ORM • Fast Response (4.2ms)</text>
+    </g>
+  </g>
+
+  <!-- Ambient Border -->
+  <rect x="4" y="4" width="792" height="492" rx="14" fill="none" stroke="#2563eb" stroke-width="1.2" opacity="0.35"/>
+</svg>
+

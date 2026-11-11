@@ -150,7 +150,11 @@ Pastikan Anda sudah menginstal **Node.js** (disarankan versi 20 atau terbaru) da
 
 ## Live Demo
 
+<<<<<<< HEAD
 - **Production URL:** [`https://your-portfolio-demo.netlify.app`](https://your-portfolio-demo.netlify.app) *(Ganti dengan URL hosting Netlify/Vercel Anda)*
+=======
+- **Production URL:** [`https://alvaroraka-portofolio.netlify.app/`](https://alvaroraka-portofolio.netlify.app/)) *(Ganti dengan URL hosting Netlify/Vercel Anda)*
+>>>>>>> 158d1f2f15ae01702d1146035554b1f5bdea264a
 
 ---
 

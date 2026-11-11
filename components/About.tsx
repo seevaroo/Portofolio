@@ -47,7 +47,7 @@ interface StatItem {
 
 const STATS: StatItem[] = [
   {
-    value: '4',
+    value: '3',
     label: 'Projects',
     description: 'Karya yang dibuat',
     icon: Code2,

@@ -1,12 +1,15 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { ArrowDown, Send } from 'lucide-react';
+import { Send, Code2, FileText } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, InstagramIcon, LinkedInAppIcon, InstagramAppIcon } from './SocialIcons';
 import LanyardCard from './lanyard/LanyardWrapper';
 import AnimatedContent from './AnimatedContent';
 import TextType from './TextType';
 import TechText from './TechText';
+
+// Link share Google Drive CV PDF Anda (silakan ganti dengan link Google Drive file Anda)
+const CV_GOOGLE_DRIVE_URL = 'https://drive.google.com/drive/folders/1BDIvMcFCYV_H-mwdDirJ09j6D0buAYDi';
 
 export type DeviceType = 'mobile' | 'tablet' | 'desktop';
 
@@ -177,27 +180,38 @@ export default function Hero() {
 
             {/* Short Description */}
             <p className="text-sm sm:text-base md:text-lg text-slate-300/90 leading-relaxed max-w-2xl mb-6 sm:mb-8 font-light text-center xl:text-left">
-              I specialize in engineering high-performance web applications, resilient backend architectures, and
-              immersive interactive experiences. Driven by clean code, minimalist design principles, and modern digital
-              craftsmanship.
+              Halo! Saya Alvaro, seseorang yang tertarik dengan dunia teknologi dan pengembangan web. Saat ini saya sedang terus belajar, mengeksplorasi berbagai teknologi, dan mengembangkan kemampuan melalui berbagai project yang saya kerjakan.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center xl:justify-start gap-3 sm:gap-4 mb-8 sm:mb-10 w-full sm:w-auto">
+            <div className="flex flex-wrap items-center justify-center xl:justify-start gap-3 sm:gap-4 mb-8 sm:mb-10 w-full sm:w-auto">
+              {/* View Project Button (Sama seperti View Certificate dengan ikon Navbar Project) */}
               <button
                 onClick={() => handleScrollTo('portfolio')}
-                className="w-full sm:w-auto px-7 py-3 rounded-full bg-white hover:bg-slate-100 text-slate-950 font-semibold text-sm tracking-wide transition-all duration-200 shadow-lg shadow-white/10 hover:shadow-sky-400/20 active:scale-98 flex items-center justify-center gap-2 group cursor-pointer"
+                className="w-full sm:w-auto px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm tracking-wide transition-all duration-300 shadow-xl shadow-blue-500/30 flex items-center justify-center gap-2 cursor-pointer active:scale-95"
               >
-                <span>Explore My Work</span>
-                <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+                <Code2 className="w-4 h-4" />
+                <span>View Project</span>
               </button>
 
+              {/* View CV Button (Warna biru sama seperti View Certificate, link ke Google Drive PDF) */}
+              <a
+                href={CV_GOOGLE_DRIVE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm tracking-wide transition-all duration-300 shadow-xl shadow-blue-500/30 flex items-center justify-center gap-2 cursor-pointer active:scale-95"
+              >
+                <FileText className="w-4 h-4" />
+                <span>View CV</span>
+              </a>
+
+              {/* Contact Me Button */}
               <button
                 onClick={() => handleScrollTo('contact')}
-                className="w-full sm:w-auto px-7 py-3 rounded-full border border-slate-700 hover:border-slate-500 bg-slate-900/60 hover:bg-slate-800/80 text-slate-200 font-semibold text-sm tracking-wide transition-all duration-200 backdrop-blur-sm active:scale-98 flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full sm:w-auto px-6 py-3 rounded-xl border border-white/15 hover:border-white/30 bg-white/5 hover:bg-white/10 text-slate-200 hover:text-white font-medium text-sm tracking-wide transition-all duration-300 backdrop-blur-sm active:scale-95 flex items-center justify-center gap-2 cursor-pointer shadow-sm"
               >
-                <span>Contact Me</span>
                 <Send className="w-3.5 h-3.5 text-sky-400" />
+                <span>Contact Me</span>
               </button>
             </div>
 

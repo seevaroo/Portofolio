@@ -19,7 +19,7 @@ const EDUCATION: EducationItem[] = [
   {
     school: 'SMKN 20 Jakarta',
     level: 'SEKOLAH MENENGAH KEJURUAN',
-    period: '2025 - Sekarang',
+    period: '2024 - Sekarang',
     description: "berijazah",
     logo: '/smkn20.png',
   },
@@ -31,11 +31,11 @@ const EDUCATION: EducationItem[] = [
     logo: '/smpn12.png',
   },
   {
-    school: 'SDN 015 Pagi Cipete Utara',
+    school: 'SDN 15 Pagi Cipete Utara',
     level: 'SEKOLAH DASAR',
     period: '2015 - 2021',
     description: "berijazah",
-    logo: '/image.png',
+    logo: '/sdn15.png',
   },
 ];
 interface StatItem {

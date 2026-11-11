@@ -20,9 +20,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Alvaro Raka Pratama | Full Stack Developer",
+  title: "Alvaro Raka Pratama | Portfolio",
   description:
-    "Personal Developer Portfolio of Alvaro Raka Pratama. Full Stack Developer specializing in Next.js, React, TypeScript, and Three.js 3D web applications.",
+    "Personal Developer Portfolio of Alvaro Raka Pratama.",
   keywords: [
     "Alvaro Raka Pratama",
     "Full Stack Developer",

@@ -133,9 +133,10 @@ Pastikan Anda sudah menginstal **Node.js** (disarankan versi 20 atau terbaru) da
 3. **Konfigurasi Environment Variables *(Opsional untuk fitur Contact & Komentar)***
    Buat file `.env.local` di root folder proyek, lalu isi kredensial berikut:
    ```env
-   NEXT_PUBLIC_WEB3FORMS_KEY=your_web3forms_access_key
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_WEB3FORMS_KEY='3e25d82f-ee65-423a-8ccc-9b839883ecdf'
+NEXT_PUBLIC_SUPABASE_URL='https://bjkjkmtstkkljsreseyt.supabase.co'
+NEXT_PUBLIC_SUPABASE_ANON_KEY='sb_publishable_oPBq1db_ieRyTeXvyZhEqg_SEOTDIQq'
+
    ```
 
 4. **Jalankan server development**
